@@ -1,9 +1,10 @@
-# Overview
+# Sales Forecasting 
+## 1. Overview
 
 This project focuses on **daily revenue forecasting** using historical sales, Cost of Goods Sold (COGS), and promotional campaign data. The objective is to build a machine learning pipeline that not only forecasts future revenue but also provides insights into the key factors influencing revenue performance.
 The project uses **LightGBM (Light Gradient Boosting Machine)** as the primary forecasting model. Historical revenue and COGS data are combined with information on promotional campaigns to construct and enrich predictive features, such as **lag features, moving averages, rolling statistics, and promotion-related features**.
 
-# Business Objectives 
+## 2. Business Objectives 
 
 The project aims to support data-driven revenue planning and business decision-making through the following objectives:
 1. **Forecast future revenue**
@@ -17,7 +18,25 @@ Provide reliable revenue forecasts that can support planning activities such as 
 5. **Ensure model interpretability**
 Apply SHAP to explain model predictions and identify the features that have the greatest influence on forecasted revenue, making the model more transparent and easier to interpret from a business perspective.
 
-# Datasets 
+## 3. Structure
+```
+├── DATA/
+│   ├── sales.csv
+│   └── promotions.csv
+│
+├── IMAGES/
+│   └── Visualization outputs
+│
+├── RESULTS/
+│   └── Model outputs and saved results
+│
+├── sales_forecasting.ipynb
+├── README.md
+└── .gitignore
+└── requirements.txt 
+```                  
+
+## Datasets 
 
 The project uses two datasets:
 
