@@ -1,0 +1,33 @@
+{
+  "string_values": {
+    "revenue": 308,
+    "cogs": 308
+  },
+  "time_component": {
+    "rows": 214,
+    "value": [
+      "00:00:00"
+    ]
+  },
+  "date_format": {
+    "slash": 213,
+    "iso": 3638
+  },
+  "duplicate": {
+    "days": 18,
+    "rows": 36,
+    "identical": true,
+    "rows_after": 3833
+  },
+  "post_checks": {
+    "số dòng khớp số ngày khác nhau": true,
+    "kiểu doanh thu là số thực": true,
+    "kiểu giá vốn là số thực": true,
+    "không sinh ô rỗng": true,
+    "ngày tăng dần": true,
+    "chuỗi ngày liên tục": true,
+    "doanh thu đều dương": true
+  },
+  "n_input": 3851,
+  "n_output": 3833
+}

@@ -1,0 +1,74 @@
+{
+  "checks": [
+    {
+      "name": "Revenue đọc được thành số",
+      "passed": false,
+      "detail": "308 ô không đọc được"
+    },
+    {
+      "name": "COGS đọc được thành số",
+      "passed": false,
+      "detail": "308 ô không đọc được"
+    },
+    {
+      "name": "Ngày dùng chung một định dạng",
+      "passed": false,
+      "detail": "213 dòng dùng dấu gạch chéo 3,638 dòng dùng dấu gạch ngang"
+    },
+    {
+      "name": "Ngày không kèm phần thời gian",
+      "passed": false,
+      "detail": "214 dòng có phần thời gian"
+    },
+    {
+      "name": "Không có ngày ghi trùng",
+      "passed": false,
+      "detail": "18 ngày, 36 dòng"
+    },
+    {
+      "name": "Chuỗi ngày liên tục",
+      "passed": true,
+      "detail": "khoảng cách lớn nhất 1 ngày, 0 chỗ đứt"
+    },
+    {
+      "name": "Ngày tăng dần theo thứ tự dòng",
+      "passed": true,
+      "detail": "đã tăng dần"
+    },
+    {
+      "name": "Không có giá trị thiếu",
+      "passed": true,
+      "detail": "0 ô có giá trị thiếu"
+    }
+  ],
+  "extra_characters": [
+    ","
+  ],
+  "type_check": {
+    "Revenue": 308,
+    "COGS": 308
+  },
+  "date_format": {
+    "slash": 213,
+    "time": 214,
+    "iso_plain": 3485,
+    "slash_and_time": 61,
+    "all_midnight": true,
+    "max_leading_number": 31
+  },
+  "duplicate_identical": true,
+  "duplicate": {
+    "rows": 36,
+    "days": 18
+  },
+  "continuity": {
+    "gaps": 0,
+    "max_gap_days": 1,
+    "motonoic": true,
+    "first": "2012-07-04",
+    "last": "2022-12-31",
+    "n_days": 3833
+  },
+  "missing": 0,
+  "n_failed": 5
+}

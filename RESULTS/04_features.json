@@ -1,0 +1,172 @@
+{
+  "writing_styles": {
+    "y.rolling(28).mean()": 14420655.832642857,
+    "y.shift(1).rolling(28).mean()": 13714255.436785717,
+    "y.shift(7).rolling(28).mean()": 9337339.780357145,
+    "y.rolling(28, center=True).mean().shift(28)": 5110196.236642857,
+    "y.shift(28).rolling(28).mean()  (an toàn)": 0.0
+  },
+  "groups": {
+    "lịch sử doanh thu": {
+      "n_columns": 24,
+      "columns": [
+        "lag_28",
+        "lag_35",
+        "lag_42",
+        "lag_56",
+        "lag_91",
+        "lag_182",
+        "lag_364",
+        "lag_371",
+        "roll_mean_7",
+        "roll_std_7",
+        "roll_mean_28",
+        "roll_std_28",
+        "roll_mean_91",
+        "roll_std_91",
+        "roll_mean_364",
+        "roll_std_364",
+        "roll_min_91",
+        "roll_max_91",
+        "lag364_smooth7",
+        "lag364_smooth28",
+        "ratio_28_364",
+        "ratio_91_364",
+        "trend_28_91",
+        "cv_91"
+      ]
+    },
+    "lịch": {
+      "n_columns": 19,
+      "columns": [
+        "dow",
+        "dom",
+        "month",
+        "quarter",
+        "doy",
+        "days_in_month",
+        "dom_reverse",
+        "is_weekend",
+        "is_eom",
+        "is_som",
+        "is_odd_year",
+        "fourier_sin1",
+        "fourier_cos1",
+        "fourier_sin2",
+        "fourier_cos2",
+        "fourier_sin3",
+        "fourier_cos3",
+        "fourier_sin4",
+        "fourier_cos4"
+      ]
+    },
+    "Tết và ngày đặc biệt": {
+      "n_columns": 4,
+      "columns": [
+        "days_to_tet",
+        "tet_before",
+        "tet_after",
+        "is_special_day"
+      ]
+    },
+    "khuyến mãi": {
+      "n_columns": 6,
+      "columns": [
+        "promo_n",
+        "promo_disc_max",
+        "promo_day_idx",
+        "promo_streetwear",
+        "promo_outdoor",
+        "promo_any"
+      ]
+    }
+  },
+  "n_features": 53,
+  "probe": {
+    "max_change": 0.0,
+    "n_checkpoints": 8,
+    "n_columns": 24
+  },
+  "leak_demo": {
+    "clean": {
+      "WAPE": 0.2153526440199532,
+      "bias": -0.14307210570257062,
+      "R2": 0.6350670101691482
+    },
+    "leaked": {
+      "WAPE": 0.027776949056189305,
+      "bias": 0.007183589471892391,
+      "R2": 0.9954336314503859
+    },
+    "cogs_correlation": 0.9759936393153104,
+    "top5_importance": {
+      "cogs": 2812,
+      "lag_364": 1360,
+      "lag_28": 1070,
+      "lag364_smooth7": 819,
+      "lag_371": 782
+    }
+  },
+  "warmup": {
+    "dropped": 371,
+    "remaining": 3462,
+    "from": "2013-07-10",
+    "to": "2022-12-31",
+    "loss_pct": 9.67910253065484
+  },
+  "features": [
+    "lag_28",
+    "lag_35",
+    "lag_42",
+    "lag_56",
+    "lag_91",
+    "lag_182",
+    "lag_364",
+    "lag_371",
+    "roll_mean_7",
+    "roll_std_7",
+    "roll_mean_28",
+    "roll_std_28",
+    "roll_mean_91",
+    "roll_std_91",
+    "roll_mean_364",
+    "roll_std_364",
+    "roll_min_91",
+    "roll_max_91",
+    "lag364_smooth7",
+    "lag364_smooth28",
+    "ratio_28_364",
+    "ratio_91_364",
+    "trend_28_91",
+    "cv_91",
+    "dow",
+    "dom",
+    "month",
+    "quarter",
+    "doy",
+    "days_in_month",
+    "dom_reverse",
+    "is_weekend",
+    "is_eom",
+    "is_som",
+    "is_odd_year",
+    "fourier_sin1",
+    "fourier_cos1",
+    "fourier_sin2",
+    "fourier_cos2",
+    "fourier_sin3",
+    "fourier_cos3",
+    "fourier_sin4",
+    "fourier_cos4",
+    "days_to_tet",
+    "tet_before",
+    "tet_after",
+    "is_special_day",
+    "promo_n",
+    "promo_disc_max",
+    "promo_day_idx",
+    "promo_streetwear",
+    "promo_outdoor",
+    "promo_any"
+  ]
+}
