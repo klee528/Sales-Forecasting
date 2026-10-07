@@ -36,22 +36,13 @@ Apply SHAP to explain model predictions and identify the features that have the 
 └── requirements.txt 
 ```                  
 
-## Datasets 
-
-The project uses two datasets:
-
-| Dataset | Description |
-|---------|-------------|
-| sales | Daily sales and COGS records |
-| promotions | Information about promotional campaigns taking place during the observation period |
-
-# Installation Guide
+# 4. Installation Guide
 
 ## 1. Clone the repository
 
 ```bash
-git clone https://github.com/klee528/Fuzzy-Factory-Ecommerce-Analytics.git
-cd Fuzzy-Factory-Ecommerce-Analytics
+git clone https://github.com/klee528/Sales-Forecasting.git
+cd Sales Forecasting 
 ```
 
 ## 2. Install the required packages
